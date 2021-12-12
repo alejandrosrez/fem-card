@@ -39,20 +39,57 @@ body {
 }
 
 /* Main image*/
+.img {
+  position: relative;
+  width: 100%;
+}
+
 .img img {
     display: block;
     width: 100%;
     border-radius: 3%;
 }
 
-/* Card info*/
-h1 {
-    color: white;
-    font-size: 22px;
+/* --Aligning the icon to the center and not showing it */
+.hover-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+  }
+
+/* --Adding the overlay for the image and not showing it */
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: var(--cyan);
+    border-radius: 3%;
+  }
+
+/* --Showing the overlay for the image and icon on hover */
+.img:hover .img-overlay {
+    opacity: 0.5;
 }
 
-h1:hover {
-    color: var(--cyan);
+.img:hover .hover-icon {
+    opacity: 1;
+}
+
+/* Card info*/
+h1 a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
 }
 
 #eth {
@@ -93,12 +130,9 @@ hr {
     font-size: 16px;
 }
 
-#author {
+#author a {
     color: white;
-}
-
-#author:hover {
-    color: var(--cyan);
+    text-decoration: none;
 }
 
 .credits-img img {
@@ -126,4 +160,8 @@ hr {
 
 .attribution a {
     color: white;
+}
+
+a:hover, #author a:hover {
+    color: var(--cyan);
 }
