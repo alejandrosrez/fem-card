@@ -98,5 +98,5 @@ I will like to continue focusing on how to make my projects responsive. I found 
 
 - [CSS Functions](https://www.w3schools.com/cssref/css_functions.asp) - This helped me understand CSS functions. I wanted to use the var function to easily add the correct colors to CSS. 
 - [How TO - Image Overlay Icon](https://www.w3schools.com/howto/howto_css_image_overlay_icon.asp) - This is where I found the information to create the overlay layer with the icon.
-- [HTML <hr> Tag](https://www.w3schools.com/tags/tag_hr.asp) - This is where I found more information about the hr tag and how to style it properly.
+- [HTML hr Tag](https://www.w3schools.com/tags/tag_hr.asp) - This is where I found more information about the hr tag and how to style it properly.
 
